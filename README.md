@@ -1,12 +1,16 @@
 ## Gene Finder
 
+Find terms using a label. For the moment, it's only looking at the label, not at the synonym.
+
 ### Install
 
-Create virtual envirement:
+1. Clone repository, change to gene-finder folder.
+
+2. Create virtual envirement:
 
 `python -m venv venv`
 
-Install requirements:
+3. Install requirements:
 
 `pip install -r requirements.txt`
 
