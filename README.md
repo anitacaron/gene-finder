@@ -18,4 +18,4 @@ Find terms using a label. For the moment, it's only looking at the label, not at
 
 Run command passing ontology purl URL, file with list of labels and output path for a csv file. Check `test/genes.txt` for an example.
 
-`python gene_finder.py --ontology http://purl.obolibrary.org/obo/rbo.owl --labels tests/genes.txt --output test/terms.csv`
+`python gene_finder.py --ontology http://purl.obolibrary.org/obo/rbo.owl --labels tests/genes.txt --output tests/terms.csv`
