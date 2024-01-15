@@ -39,9 +39,10 @@ def search_ontology(ontology: Graph, labels: list) -> list:
         WHERE {{
             ?term rdf:type owl:Class .
             ?term rdfs:label ?label .
-            ?term rdfs:subClassOf ?parent .
-            ?parent rdfs:label ?parent_label .
-            FILTER(IsIRI(?parent))
+            ?term rdfs:subClassOf+ ?parent .
+            ?parent rdfs:label ?parent_l .
+            BIND(STR(?parent_l) AS ?parent_label) .
+            FILTER(IsIRI(?parent)) .
             {expand_filter(labels)}
         }}
     """

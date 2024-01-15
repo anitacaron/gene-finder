@@ -1,3 +1,13 @@
 term,label,parent,parent_label
 http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=10848,SHH (human),http://purl.obolibrary.org/obo/SO_0001217,protein_coding_gene
+http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=10848,SHH (human),http://purl.obolibrary.org/obo/SO_0000704,gene
+http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=10848,SHH (human),http://purl.obolibrary.org/obo/BFO_0000040,material entity
+http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=10848,SHH (human),http://purl.obolibrary.org/obo/BFO_0000004,independent continuant
+http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=10848,SHH (human),http://purl.obolibrary.org/obo/BFO_0000002,continuant
+http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=10848,SHH (human),http://purl.obolibrary.org/obo/BFO_0000001,entity
 http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=3686,FGF8 (human),http://purl.obolibrary.org/obo/SO_0001217,protein_coding_gene
+http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=3686,FGF8 (human),http://purl.obolibrary.org/obo/SO_0000704,gene
+http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=3686,FGF8 (human),http://purl.obolibrary.org/obo/BFO_0000040,material entity
+http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=3686,FGF8 (human),http://purl.obolibrary.org/obo/BFO_0000004,independent continuant
+http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=3686,FGF8 (human),http://purl.obolibrary.org/obo/BFO_0000002,continuant
+http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=3686,FGF8 (human),http://purl.obolibrary.org/obo/BFO_0000001,entity
