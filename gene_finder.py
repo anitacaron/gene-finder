@@ -35,10 +35,13 @@ def search_ontology(ontology: Graph, labels: list) -> list:
         "rdfs": RDFS
     }
     simple_query = f"""
-        SELECT DISTINCT ?term ?label
+        SELECT DISTINCT ?term ?label ?parent ?parent_label
         WHERE {{
             ?term rdf:type owl:Class .
             ?term rdfs:label ?label .
+            ?term rdfs:subClassOf ?parent .
+            ?parent rdfs:label ?parent_label .
+            FILTER(IsIRI(?parent))
             {expand_filter(labels)}
         }}
     """
@@ -48,7 +51,15 @@ def search_ontology(ontology: Graph, labels: list) -> list:
     )
 
     qres = ontology.query(q)
-    results = [{"term": row.term, "label": row.label} for row in qres]
+    results = [
+        {
+            "term": row.term,
+            "label": row.label,
+            "parent": row.parent,
+            "parent_label": row.parent_label
+        }
+        for row in qres
+    ]
 
     return results
 
